@@ -11,7 +11,7 @@ export const AuthForm = ({ type }: IAuthForm) => {
       <div className="flex items-center justify-center h-screen">
         <div
           className={cn(
-            "bg-white dark:bg-dark-gray w-full p-6 sm:p-8 rounded-lg shadow-lg shadow-gray-500/50 dark:shadow-black/70",
+            "bg-white dark:bg-black w-full p-6 sm:p-8 rounded-lg shadow-lg shadow-gray-500/50 dark:shadow-black/70",
             type === "register" ? "max-w-xl" : "max-w-md"
           )}
         >
