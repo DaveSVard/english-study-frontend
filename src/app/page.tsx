@@ -1,7 +1,13 @@
+import { Homepage } from "./homepage";
+import { Header } from "./layouts/Header";
+import { Footer } from "./layouts/Footer";
+
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <h1 className="text-3xl font-bold underline">Hello World</h1>
+    <div className="h-[2000px]">
+      <Header />
+      <Homepage />
+      <Footer />
     </div>
   );
 }
