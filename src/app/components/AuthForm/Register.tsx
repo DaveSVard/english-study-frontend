@@ -177,7 +177,7 @@ export const Register = () => {
               By creating an account, you agree to our <Link href="/terms" className="text-accent underline">Terms of Service</Link> and <Link href="/privacy" className="text-accent underline">Privacy Policy</Link>.
             </span>
 
-            <Button type="submit">Sign Up</Button>
+            <Button variant="accent" type="submit">Sign Up</Button>
 
             <div className="flex flex-col gap-2 items-center justify-center mt-4">
               <p className="flex gap-1 items-center text-xs text-black dark:text-white">

@@ -93,7 +93,7 @@ export const Login = () => {
               By continuing, you agree to our <Link href="/terms" className="text-accent underline">Terms of Service</Link> and <Link href="/privacy" className="text-accent underline">Privacy Policy</Link>.
             </span>
 
-            <Button type="submit">Sign In</Button>
+            <Button variant="accent" type="submit">Sign In</Button>
 
             <div className="flex flex-col gap-2 items-center justify-center mt-4">
               <Link href="/forgot-password" className="text-xs text-accent underline">

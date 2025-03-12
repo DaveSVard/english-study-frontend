@@ -4,8 +4,8 @@ import Link from 'next/link';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { useScroll, useMotionValueEvent, AnimatePresence, motion } from 'framer-motion';
-import { Button } from '../components/ui/Button';
-import { AnimatedThemeToggle } from '../components/AnimatedThemeToggle';
+import { Button } from '../../components/ui/Button';
+import { AnimatedThemeToggle } from '../../components/AnimatedThemeToggle';
 
 export const Header = () => {
   const pathname = usePathname();
