@@ -2,7 +2,7 @@ import { Login } from "./Login";
 import { Register } from "./Register";
 import { ThemeToggle } from "../ThemeToggle";
 
-import { IAuthForm } from "@/app/lib/types";
+import { IAuthForm } from "@/app/types";
 import { cn } from "@/app/lib/utils";
 
 export const AuthForm = ({ type }: IAuthForm) => {
