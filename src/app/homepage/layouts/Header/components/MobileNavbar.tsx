@@ -2,16 +2,17 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import { useRouter } from "next/navigation";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 
 import { AnimatedThemeToggle, Button, Logo } from "@/app/components";
 import { cn } from "@/app/lib/utils";
 import { INavItem } from "@/app/types";
 import { BurgerButton } from "./BurgerButton";
-
 export const MobileNavbar = ({ navItems }: { navItems: INavItem[] }) => {
-  const [open, setOpen] = useState(false);
+  const router = useRouter();
 
+  const [open, setOpen] = useState(false);
   const { scrollY } = useScroll();
 
   const [showBackground, setShowBackground] = useState(false);
@@ -80,16 +81,18 @@ export const MobileNavbar = ({ navItems }: { navItems: INavItem[] }) => {
             {/* Actions */}
             <div className="flex flex-row w-full items-start gap-2.5">
               <Button
+                onClick={() => router.push("/login")}
                 className="border border-black dark:border-white hover:bg-black/5 dark:hover:bg-white/10"
                 size="xl"
               >
                 Sign In
               </Button>
               <Button
+                onClick={() => router.push("/register")}
                 className="bg-black text-white dark:bg-white dark:text-black hover:bg-black/80 dark:hover:bg-white/90"
                 size="xl"
               >
-                Join Us
+                Sign Up
               </Button>
             </div>
           </div>
