@@ -8,14 +8,17 @@ import {
 } from "framer-motion";
 import { useState } from "react";
 import { useTheme } from "next-themes";
+import { useRouter } from "next/navigation";
 
-import { AnimatedThemeToggle, Button, Logo } from "@/app/components";
 import { cn } from "@/app/lib/utils";
 import { INavItem } from "@/app/types";
-import { NavBarItem } from "./NavbarItem";
 import { useWindowSize } from "@/app/lib/hooks";
+import { AnimatedThemeToggle, Button, Logo } from "@/app/components";
+
+import { NavBarItem } from "./NavbarItem";
 
 export const DesktopNavbar = ({ navItems }: { navItems: INavItem[] }) => {
+  const router = useRouter();
   const { scrollY } = useScroll();
   const { width } = useWindowSize();
   const { resolvedTheme } = useTheme();
@@ -36,7 +39,11 @@ export const DesktopNavbar = ({ navItems }: { navItems: INavItem[] }) => {
         "w-full flex relative justify-between px-4 py-3 rounded-md mx-auto"
       )}
       animate={{
-        width: showBackgroundOfNavbar ? (width && width > 1024 ? "80%" : "90%") : "100%",
+        width: showBackgroundOfNavbar
+          ? width && width > 1024
+            ? "80%"
+            : "90%"
+          : "100%",
         background:
           showBackgroundOfNavbar && resolvedTheme === "dark"
             ? "#0f2027"
@@ -79,16 +86,18 @@ export const DesktopNavbar = ({ navItems }: { navItems: INavItem[] }) => {
         {/* Actions */}
         <div className="flex gap-2 items-center">
           <Button
+            onClick={() => router.push("/login")}
             className="border border-black dark:border-white hover:bg-black/5 dark:hover:bg-white/10"
             size="xl"
           >
             Sign In
           </Button>
           <Button
+            onClick={() => router.push("/register")}
             className="bg-black text-white dark:bg-white dark:text-black hover:bg-black/80 dark:hover:bg-white/90"
             size="xl"
           >
-            Join Us
+            Sign Up
           </Button>
         </div>
       </div>

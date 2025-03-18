@@ -4,10 +4,10 @@ import { Header } from "./homepage/layouts/Header";
 
 export default function Home() {
   return (
-    <div className="h-[2000px]">
+    <div>
       <Header />
       <Homepage />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }

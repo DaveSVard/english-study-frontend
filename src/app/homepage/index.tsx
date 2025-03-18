@@ -2,8 +2,8 @@ import { Hero } from "./components/Hero"
 
 export const Homepage = () => {
   return (
-    <div>
-      {/* <Hero /> */}
+    <div className="xxl-custom-container min-h-screen">
+      <Hero />
     </div>
   )
 }
