@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 
 import { Providers } from "./providers/ThemeProvider";
-import { TopLoader } from "./components/TopLoader";
+import { TopLoader } from "./components";
 
 import "./globals.css";
 
@@ -27,7 +27,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning className="bg-white dark:bg-llet-950">
+    <html
+      lang="en"
+      suppressHydrationWarning
+      className="bg-white dark:bg-llet-950"
+    >
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <Providers>
           <TopLoader />

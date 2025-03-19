@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { Logo } from "@/app/components";
-import { socials } from "@/app/lib/homepageData";
+import { socials } from "@/app/contents/homepageData";
 
 export const Footer = () => {
   return (

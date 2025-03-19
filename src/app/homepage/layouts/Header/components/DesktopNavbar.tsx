@@ -8,7 +8,6 @@ import {
 } from "framer-motion";
 import { useState } from "react";
 import { useTheme } from "next-themes";
-import { useRouter } from "next/navigation";
 
 import { cn } from "@/app/lib/utils";
 import { INavItem } from "@/app/types";
@@ -16,9 +15,9 @@ import { useWindowSize } from "@/app/lib/hooks";
 import { AnimatedThemeToggle, Button, Logo } from "@/app/components";
 
 import { NavBarItem } from "./NavbarItem";
+import Link from "next/link";
 
 export const DesktopNavbar = ({ navItems }: { navItems: INavItem[] }) => {
-  const router = useRouter();
   const { scrollY } = useScroll();
   const { width } = useWindowSize();
   const { resolvedTheme } = useTheme();
@@ -85,19 +84,11 @@ export const DesktopNavbar = ({ navItems }: { navItems: INavItem[] }) => {
 
         {/* Actions */}
         <div className="flex gap-2 items-center">
-          <Button
-            onClick={() => router.push("/login")}
-            className="border border-black dark:border-white hover:bg-black/5 dark:hover:bg-white/10"
-            size="xl"
-          >
-            Sign In
+          <Button asChild variant="outline" size="xl">
+            <Link href="/login">Sign In</Link>
           </Button>
-          <Button
-            onClick={() => router.push("/register")}
-            className="bg-black text-white dark:bg-white dark:text-black hover:bg-black/80 dark:hover:bg-white/90"
-            size="xl"
-          >
-            Sign Up
+          <Button asChild variant="accent" size="xl">
+            <Link href="/register">Sign Up</Link>
           </Button>
         </div>
       </div>
