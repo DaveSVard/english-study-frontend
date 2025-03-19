@@ -20,7 +20,7 @@ export const CollisionMechanism = forwardRef<
       repeatDelay?: number;
     };
   }
->(({ parentRef, containerRef, beamOptions = {} }, ref) => {
+>(({ parentRef, containerRef, beamOptions = {} }, _ref) => {
   const beamRef = useRef<HTMLDivElement>(null);
   const [collision, setCollision] = useState<{
     detected: boolean;
@@ -168,3 +168,5 @@ const Explosion = ({ ...props }: React.HTMLProps<HTMLDivElement>) => {
     </div>
   );
 };
+
+CollisionMechanism.displayName = "CollisionMechanism";

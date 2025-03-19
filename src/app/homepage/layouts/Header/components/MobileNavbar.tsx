@@ -2,16 +2,14 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { useRouter } from "next/navigation";
 import { useMotionValueEvent, useScroll } from "framer-motion";
 
 import { AnimatedThemeToggle, Button, Logo } from "@/app/components";
 import { cn } from "@/app/lib/utils";
 import { INavItem } from "@/app/types";
 import { BurgerButton } from "./BurgerButton";
-export const MobileNavbar = ({ navItems }: { navItems: INavItem[] }) => {
-  const router = useRouter();
 
+export const MobileNavbar = ({ navItems }: { navItems: INavItem[] }) => {
   const [open, setOpen] = useState(false);
   const { scrollY } = useScroll();
 

@@ -8,7 +8,6 @@ import {
 } from "framer-motion";
 import { useState } from "react";
 import { useTheme } from "next-themes";
-import { useRouter } from "next/navigation";
 
 import { cn } from "@/app/lib/utils";
 import { INavItem } from "@/app/types";
@@ -19,7 +18,6 @@ import { NavBarItem } from "./NavbarItem";
 import Link from "next/link";
 
 export const DesktopNavbar = ({ navItems }: { navItems: INavItem[] }) => {
-  const router = useRouter();
   const { scrollY } = useScroll();
   const { width } = useWindowSize();
   const { resolvedTheme } = useTheme();
