@@ -80,19 +80,11 @@ export const MobileNavbar = ({ navItems }: { navItems: INavItem[] }) => {
 
             {/* Actions */}
             <div className="flex flex-row w-full items-start gap-2.5">
-              <Button
-                onClick={() => router.push("/login")}
-                className="border border-black dark:border-white hover:bg-black/5 dark:hover:bg-white/10"
-                size="xl"
-              >
-                Sign In
+              <Button asChild variant="accent" size="xl">
+                <Link href="/login">Sign In</Link>
               </Button>
-              <Button
-                onClick={() => router.push("/register")}
-                className="bg-black text-white dark:bg-white dark:text-black hover:bg-black/80 dark:hover:bg-white/90"
-                size="xl"
-              >
-                Sign Up
+              <Button asChild variant="outline" size="xl">
+                <Link href="/register">Sign Up</Link>
               </Button>
             </div>
           </div>

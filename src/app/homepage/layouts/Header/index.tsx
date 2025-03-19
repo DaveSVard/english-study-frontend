@@ -1,9 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { navItems } from "@/app/lib/homepageData";
-import { DesktopNavbar } from "./components/DesktopNavbar";
-import { MobileNavbar } from "./components/MobileNavbar";
+
+import { DesktopNavbar, MobileNavbar } from "./components";
+import { navItems } from "@/app/contents/homepageData";
 
 export const Header = () => {
   return (
@@ -18,7 +18,7 @@ export const Header = () => {
         ease: [0.6, 0.05, 0.1, 0.9],
         duration: 0.8,
       }}
-      className="xxl-custom-container fixed top-4 inset-x-0 z-50 w-full"
+      className="xxl-custom-container fixed z-[999] top-4 inset-x-0 w-full"
     >
       <div className="hidden lg:block w-full">
         <DesktopNavbar navItems={navItems} />

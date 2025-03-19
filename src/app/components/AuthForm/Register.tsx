@@ -11,7 +11,7 @@ import { IoFemale, IoMale } from "react-icons/io5";
 
 import { Input } from '../ui/Input'
 import { Button } from '../ui/Button'
-import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '../ui/Form'
+import { Form, FormControl, FormField, FormItem, FormMessage } from '../ui/Form'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/Select'
 import { registerSchema } from '@/app/lib/schemas';
 import { RadioGroup, RadioGroupItem } from '../ui/RadioGroup';

@@ -100,7 +100,7 @@ export const Login = () => {
                 Forgot Password?
               </Link>
               <p className="flex gap-1 items-center text-xs text-black dark:text-white">
-                Don't have an account?
+                Don&apos;t have an account?
                 <Link href="/register" className="text-xs text-accent underline">
                   Register
                 </Link>
