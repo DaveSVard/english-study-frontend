@@ -6,7 +6,7 @@ import React from "react";
 export const BackgroundGrids = () => {
   return (
     <motion.div
-      variants={opacityAnimation({ delay: 1.25, duration: 1 })}
+      variants={opacityAnimation({ delay: 1.35, duration: 1.25 })}
       className="pointer-events-none absolute inset-0 z-0 grid h-full w-full -rotate-45 transform select-none grid-cols-2 gap-10 md:grid-cols-4"
     >
       {Array.from({ length: 4 }).map((_, index) => (

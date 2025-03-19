@@ -20,8 +20,8 @@ export const CollisionMechanism = forwardRef<
       repeatDelay?: number;
     };
   }
->(({ parentRef, containerRef, beamOptions = {} }, _ref) => {
-  const beamRef = useRef<HTMLDivElement>(null);
+>(({ parentRef, containerRef, beamOptions = {} }, ref) => {
+  const beamRef = useRef<HTMLDivElement | null>(null);
   const [collision, setCollision] = useState<{
     detected: boolean;
     coordinates: { x: number; y: number } | null;
@@ -87,7 +87,7 @@ export const CollisionMechanism = forwardRef<
   }, [collision]);
 
   return (
-    <>
+    <div ref={ref}>
       <motion.div
         key={beamKey}
         ref={beamRef}
@@ -130,7 +130,7 @@ export const CollisionMechanism = forwardRef<
           />
         )}
       </AnimatePresence>
-    </>
+    </div>
   );
 });
 
