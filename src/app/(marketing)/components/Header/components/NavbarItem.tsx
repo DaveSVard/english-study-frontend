@@ -7,17 +7,18 @@ type Props = {
     link: string;
     title: string;
     external?: boolean;
+    scroll?: boolean;
   };
   active?: boolean;
   className?: string;
 };
 
 export function NavBarItem({ linkItem, active, className }: Props) {
-  const { link, title, external } = linkItem;
+  const { link, title, external, scroll } = linkItem;
   const pathname = usePathname();
 
   const handleClick = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    if (!external) {
+    if (!external && scroll) {
       e.preventDefault();
       const targetElement = document.querySelector(link);
       if (targetElement) {

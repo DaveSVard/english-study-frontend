@@ -1,22 +1,22 @@
 "use client";
 
-import Link from "next/link";
 import Image from "next/image";
+import Link from "next/link";
 import { useRef } from "react";
 import { motion } from "framer-motion";
 import Balancer from "react-wrap-balancer";
 
-import { IHero } from "@/app/types";
-import { hero } from "@/app/contents/homepageData";
-import { Button, InViewContainer } from "@/app/components";
+import { AnimatedText, Button, InViewContainer } from "@/app/components";
 import { BackgroundGrids, CollisionMechanism } from "./components";
+import { heroData } from "@/app/contents/homepageData";
 import { fadeIn } from "@/app/lib/motions";
+import { IHero } from "@/app/types";
 
 export function Hero() {
   const containerRef = useRef<HTMLDivElement | null>(null);
   const parentRef = useRef<HTMLDivElement | null>(null);
 
-  const { heading, subHeading, CTAs, image } = hero as IHero;
+  const { heading, subHeading, CTAs, image } = heroData as IHero;
 
   const collisionElements = [
     {
@@ -53,7 +53,7 @@ export function Hero() {
     <InViewContainer amount={0.15}>
       <div
         ref={parentRef}
-        className="relative flex  flex-col items-center justify-center overflow-hidden py-36 md:py-40"
+        className="relative flex  flex-col items-center justify-center overflow-hidden pt-36 md:pt-40 pb-14 md:pb-20"
       >
         <BackgroundGrids />
 
@@ -66,32 +66,19 @@ export function Hero() {
           />
         ))}
 
-        <motion.h2
-          variants={fadeIn({
-            direction: "up",
-            delay: 0,
-            duration: 1,
-            value: 25,
-            type: "tween",
-            ease: "easeInOut",
-          })}
+        <AnimatedText
+          as="h1"
           className="text-balance relative z-10 mx-auto mt-4 max-w-xl md:max-w-4xl text-center font-semibold tracking-tight text-black dark:text-white text-3xl xs:text-4xl md:text-6xl lg:text-7xl"
         >
           <Balancer>{heading}</Balancer>
-        </motion.h2>
-        <motion.p
-          variants={fadeIn({
-            direction: "up",
-            delay: 0.25,
-            duration: 1,
-            value: 25,
-            type: "tween",
-            ease: "easeInOut",
-          })}
-          className="relative z-10 mx-auto mt-4 md:mt-8 max-w-md md:max-w-lg px-4 text-center text-sm xs:text-base text-gray-600 dark:text-gray-200"
+        </AnimatedText>
+        <AnimatedText
+          as="p"
+          delay={0.25}
+          className="text-balance relative z-10 mx-auto mt-4 md:mt-8 max-w-md md:max-w-lg px-4 text-center text-sm xs:text-base text-gray-600 dark:text-gray-200"
         >
-          {subHeading}
-        </motion.p>
+          <Balancer>{subHeading}</Balancer>
+        </AnimatedText>
 
         <motion.div
           variants={fadeIn({

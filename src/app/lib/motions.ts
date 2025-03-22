@@ -37,10 +37,10 @@ export const opacityAnimation = ({
   show: {
     opacity: 1,
     transition: {
-      type: "spring",
+      type: "tween",
       delay: delay,
       duration: duration,
-      ease: "easeOut",
+      ease: "easeInOut",
     },
   },
 });

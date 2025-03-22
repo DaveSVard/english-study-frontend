@@ -37,4 +37,12 @@
   .xxl-custom-container {
     @apply max-w-[1620px] mx-auto px-6 lg:px-8;
   }
+
+  .section-heading {
+    @apply max-w-3xl mx-auto text-center text-3xl sm:text-4xl md:text-5xl font-bold text-black dark:text-white;
+  }
+
+  .section-subheading {
+    @apply max-w-2xl mx-auto text-center text-base sm:text-lg text-neutral-600 dark:text-neutral-300 mt-4;
+  }
 }
