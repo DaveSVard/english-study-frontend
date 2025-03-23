@@ -1,10 +1,11 @@
-import { Stats, Hero } from "./components";
+import { Hero, Stats, Testimonials } from "./components";
 
 export default function Homepage() {
   return (
-    <div className="xxl-custom-container min-h-screen">
+    <div className="min-h-screen">
       <Hero />
       <Stats />
+      <Testimonials />
     </div>
   );
 }

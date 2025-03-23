@@ -6,7 +6,7 @@ import {
   InViewContainer,
   Squares,
 } from "@/app/components";
-import { statsData } from "@/app/contents/homepageData";
+import { statsData } from "@/app/contents/marketingPageData";
 import { opacityAnimation } from "@/app/lib/motions";
 import { cn } from "@/app/lib/utils";
 import { animate, motion, useInView } from "framer-motion";
@@ -17,7 +17,10 @@ export const Stats = () => {
   const { stats } = statsData;
 
   return (
-    <InViewContainer amount={0.2} className="py-14 md:py-20">
+    <InViewContainer
+      amount={0.2}
+      className="xl-custom-container py-16 md:py-20"
+    >
       <AnimatedText as="h2" className="section-heading">
         <Balancer>{statsData.heading}</Balancer>
       </AnimatedText>
@@ -31,7 +34,7 @@ export const Stats = () => {
           delay: 0.5,
           duration: 1,
         })}
-        className="mx-auto max-w-7xl border border-neutral-200/50 dark:border-neutral-700 mt-16 rounded-xl"
+        className="border light-border-color mt-16 rounded-xl"
       >
         <div className="grid grid-cols-1 lg:grid-cols-3">
           {stats.map((item, index) => (
@@ -40,7 +43,7 @@ export const Stats = () => {
               className={cn(
                 "group/card relative overflow-hidden p-6 lg:p-10",
                 index !== stats.length - 1 &&
-                  "border-b border-neutral-200/50 dark:border-neutral-700 lg:border-b-0 lg:border-r"
+                  "border-b light-border-color lg:border-b-0 lg:border-r"
               )}
             >
               <Squares size={20} />
@@ -65,7 +68,7 @@ export const Stats = () => {
                 {item.title}
               </h3>
 
-              <p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-300">
+              <p className="text-sm sm:text-base text-neutral-600 dark:text-neutral-300 mt-1 lg:mt-2.5">
                 {item.description}
               </p>
             </div>
