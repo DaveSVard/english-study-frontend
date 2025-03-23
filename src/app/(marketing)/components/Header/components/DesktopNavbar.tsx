@@ -1,11 +1,6 @@
 "use client";
 
-import {
-  AnimatePresence,
-  motion,
-  useMotionValueEvent,
-  useScroll,
-} from "framer-motion";
+import { motion, useMotionValueEvent, useScroll } from "framer-motion";
 import { useState } from "react";
 import { useTheme } from "next-themes";
 

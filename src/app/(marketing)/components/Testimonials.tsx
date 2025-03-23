@@ -13,7 +13,14 @@ export const Testimonials = () => {
   const { width } = useWindowSize();
   const { heading, subheading, testimonials } = testimonialsData;
 
-  const [testimonialsChunks, setTestimonialChunks] = useState<any[][]>([]);
+  const [testimonialsChunks, setTestimonialChunks] = useState<
+    {
+      id: number;
+      review: string;
+      name: string;
+      profession: string;
+    }[][]
+  >([]);
   const [marqueeDurations, setMarqueeDurations] = useState<string[]>(["25s"]);
 
   useEffect(() => {
