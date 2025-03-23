@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 
 import { DesktopNavbar, MobileNavbar } from "./components";
-import { navItems } from "@/app/contents/homepageData";
+import { navItems } from "@/app/contents/marketingPageData";
 
 export const Header = () => {
   return (

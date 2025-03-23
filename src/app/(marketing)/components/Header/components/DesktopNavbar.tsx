@@ -55,19 +55,6 @@ export const DesktopNavbar = ({ navItems }: { navItems: INavItem[] }) => {
         type: "tween",
       }}
     >
-      <AnimatePresence>
-        {showBackgroundOfNavbar && (
-          <motion.div
-            key={String(showBackgroundOfNavbar)}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{
-              duration: 1,
-            }}
-            className="absolute inset-0 h-full w-full bg-trade-sentry-800 pointer-events-none [mask-image:linear-gradient(to_bottom,white,transparent,white)] rounded-xl"
-          />
-        )}
-      </AnimatePresence>
       <div className="flex flex-row gap-3 xl:gap-5 items-center">
         <Logo />
 
