@@ -11,6 +11,10 @@
   --breakpoint-xl: 1280px;
   --breakpoint-2xl: 1536px;
 
+  --max-width-8xl: 1360px;
+  --max-width-9xl: 1440px;
+  --max-width-10xl: 1620px;
+
   --color-black: #0c110f;
   --color-white: #f9f9f9;
   --color-accent: #3674b5;
@@ -60,11 +64,11 @@
 
 @layer components {
   .xxl-custom-container {
-    @apply max-w-[1620px] mx-auto px-4 sm:px-8 md:px-12 xl:px-20;
+    @apply max-w-10xl mx-auto px-4 sm:px-8 md:px-12 xl:px-20;
   }
 
   .xl-custom-container {
-    @apply max-w-7xl mx-auto px-4 sm:px-8 md:px-12 xl:px-20;
+    @apply max-w-8xl mx-auto px-4 sm:px-8 md:px-12 xl:px-20;
   }
 
   .section-heading {

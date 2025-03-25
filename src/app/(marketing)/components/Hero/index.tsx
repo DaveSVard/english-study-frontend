@@ -56,9 +56,9 @@ export function Hero() {
       >
         <BackgroundGrids />
 
-        {collisionElements.map((element) => (
+        {collisionElements.map((element, index) => (
           <CollisionMechanism
-            key={element.initialX}
+            key={index}
             beamOptions={element}
             containerRef={containerRef}
             parentRef={parentRef}
