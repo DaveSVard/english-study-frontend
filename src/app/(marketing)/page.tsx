@@ -1,4 +1,4 @@
-import { Hero, Stats, Testimonials, TestimonialsCarousel } from "./components";
+import { Hero, Stats, Testimonials, TestimonialsCarousel, FAQ } from "./components";
 
 export default function Homepage() {
   return (
@@ -7,6 +7,7 @@ export default function Homepage() {
       <Stats />
       <Testimonials />
       <TestimonialsCarousel />
+      <FAQ />
     </div>
   );
 }

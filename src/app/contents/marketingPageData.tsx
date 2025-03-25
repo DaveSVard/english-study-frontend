@@ -129,153 +129,42 @@ export const testimonialsData = {
       videoSrc: "/assets/empty-bg.webp",
       userImage: "/assets/empty-bg.webp",
       date: "2023-03-15",
+    }
+  ],
+};
+
+export const faqData = {
+  heading: "Frequently Asked Questions",
+  faqs: [
+    {
+      question: "What is the purpose of this website?",
+      answer:
+        "This website is a place to help you find the best products and services in the world.",
     },
     {
-      id: 6,
-      review:
-        "I've tried many platforms, but this one is by far the best for learning English.",
-      name: "Sarah Johnson",
-      profession: "HR Manager",
-      videoSrc: "/assets/empty-bg.webp",
-      userImage: "/assets/empty-bg.webp",
-      date: "2023-02-28",
+      question: "How do I contact support?",
+      answer:
+        "You can contact support by email at support@example.com or by phone at 123-456-7890.",
     },
     {
-      id: 7,
-      review:
-        "The lessons are well-structured and easy to follow. Great for all levels.",
-      name: "David Martinez",
-      profession: "Sales Executive",
-      videoSrc: "/assets/empty-bg.webp",
-      userImage: "/assets/empty-bg.webp",
-      date: "2023-01-20",
+      question: "How do I find the best products?",
+      answer:
+        "You can find the best products by searching for them on the search page or by browsing the categories.",
     },
     {
-      id: 8,
-      review:
-        "The customer support is fantastic. They really care about their users.",
-      name: "Laura Garcia",
-      profession: "Customer Service Representative",
-      videoSrc: "/assets/empty-bg.webp",
-      userImage: "/assets/empty-bg.webp",
-      date: "2022-12-15",
+      question: "Can I return a product?",
+      answer:
+        "Yes, you can return a product within 30 days of purchase. Please refer to our return policy for more details.",
     },
     {
-      id: 9,
-      review:
-        "I've made so much progress in such a short time. This platform is amazing.",
-      name: "James Anderson",
-      profession: "Project Manager",
-      videoSrc: "/assets/empty-bg.webp",
-      userImage: "/assets/empty-bg.webp",
-      date: "2022-11-10",
+      question: "Do you offer international shipping?",
+      answer:
+        "Yes, we offer international shipping to most countries. Shipping fees and delivery times may vary depending on the destination.",
     },
     {
-      id: 10,
-      review:
-        "The variety of exercises keeps things interesting. I never get bored.",
-      name: "Linda Thompson",
-      profession: "Content Writer",
-      videoSrc: "/assets/empty-bg.webp",
-      userImage: "/assets/empty-bg.webp",
-      date: "2022-10-05",
-    },
-    {
-      id: 11,
-      review:
-        "The feedback from the AI tutor is very constructive. I've learned a lot.",
-      name: "Robert Lee",
-      profession: "Financial Advisor",
-      videoSrc: "/assets/empty-bg.webp",
-      userImage: "/assets/empty-bg.webp",
-      date: "2022-09-25",
-    },
-    {
-      id: 12,
-      review: "The mobile app is very convenient. I can learn on the go.",
-      name: "Patricia White",
-      profession: "Nurse",
-      videoSrc: "/assets/empty-bg.webp",
-      userImage: "/assets/empty-bg.webp",
-      date: "2022-08-15",
-    },
-    {
-      id: 13,
-      review:
-        "The lessons are very interactive and engaging. I look forward to them every day.",
-      name: "Charles Harris",
-      profession: "Architect",
-      videoSrc: "/assets/empty-bg.webp",
-      userImage: "/assets/empty-bg.webp",
-      date: "2022-07-10",
-    },
-    {
-      id: 14,
-      review:
-        "The platform is very user-friendly. It's easy to navigate and find what I need.",
-      name: "Barbara Clark",
-      profession: "Lawyer",
-      videoSrc: "/assets/empty-bg.webp",
-      userImage: "/assets/empty-bg.webp",
-      date: "2022-06-05",
-    },
-    {
-      id: 15,
-      review: "The community is very supportive. I've made many friends here.",
-      name: "Daniel Lewis",
-      profession: "Chef",
-      videoSrc: "/assets/empty-bg.webp",
-      userImage: "/assets/empty-bg.webp",
-      date: "2022-05-20",
-    },
-    {
-      id: 16,
-      review:
-        "The AI tutor is very accurate. It helps me correct my mistakes effectively.",
-      name: "Jennifer Robinson",
-      profession: "Photographer",
-      videoSrc: "/assets/empty-bg.webp",
-      userImage: "/assets/empty-bg.webp",
-      date: "2022-04-15",
-    },
-    {
-      id: 17,
-      review:
-        "The lessons are very comprehensive. They cover all aspects of English learning.",
-      name: "Paul Walker",
-      profession: "Engineer",
-      videoSrc: "/assets/empty-bg.webp",
-      userImage: "/assets/empty-bg.webp",
-      date: "2022-03-10",
-    },
-    {
-      id: 18,
-      review: "The platform is very affordable. Great value for money.",
-      name: "Elizabeth Hall",
-      profession: "Accountant",
-      videoSrc: "/assets/empty-bg.webp",
-      userImage: "/assets/empty-bg.webp",
-      date: "2022-02-05",
-    },
-    {
-      id: 19,
-      review:
-        "The progress tracking feature is very motivating. I can see my improvement.",
-      name: "Mark Allen",
-      profession: "Consultant",
-      videoSrc: "/assets/empty-bg.webp",
-      userImage: "/assets/empty-bg.webp",
-      date: "2022-01-25",
-    },
-    {
-      id: 20,
-      review:
-        "The lessons are very practical. I can apply what I learn in real life.",
-      name: "Mary Young",
-      profession: "Doctor",
-      videoSrc: "/assets/empty-bg.webp",
-      userImage: "/assets/empty-bg.webp",
-      date: "2022-01-10",
+      question: "How can I track my order?",
+      answer:
+        "You can track your order by logging into your account and visiting the order history page. You will also receive a tracking number via email once your order has shipped.",
     },
   ],
 };

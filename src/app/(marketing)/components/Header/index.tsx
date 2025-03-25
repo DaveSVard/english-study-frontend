@@ -18,7 +18,7 @@ export const Header = () => {
         ease: [0.6, 0.05, 0.1, 0.9],
         duration: 0.8,
       }}
-      className="xxl-custom-container fixed z-[999] top-4 inset-x-0 w-full"
+      className="xxl-custom-container fixed z-[9999] top-4 inset-x-0 w-full"
     >
       <div className="hidden lg:block w-full">
         <DesktopNavbar navItems={navItems} />
