@@ -172,7 +172,7 @@ export const TestimonialsCarousel = ({
                 "p-2.5 rounded-sm flex items-center justify-center group/button",
                 active > 0
                   ? "cursor-pointer bg-accent"
-                  : "bg-white-200 dark:bg-dark-gray-200"
+                  : "bg-gray-30 dark:bg-gray-15"
               )}
               disabled={active === 0}
             >
@@ -189,7 +189,7 @@ export const TestimonialsCarousel = ({
                 "p-2.5 rounded-sm flex items-center justify-center group/button",
                 active < testimonials.length - 1
                   ? "cursor-pointer bg-accent"
-                  : "bg-white-200 dark:bg-dark-gray-200"
+                  : "bg-gray-30 dark:bg-gray-15"
               )}
               disabled={active === testimonials.length - 1}
             >
