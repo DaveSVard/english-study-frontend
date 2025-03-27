@@ -1,14 +1,22 @@
 import {
   FaArrowUp,
+  FaBook,
   FaClock,
+  FaComments,
   FaFacebook,
   FaInstagram,
+  FaPenFancy,
+  FaPuzzlePiece,
   FaServer,
   FaTelegram,
   FaTwitter,
 } from "react-icons/fa";
 
 import { FaLinkedin } from "react-icons/fa";
+
+const Skeleton = () => (
+  <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl dark:bg-llet-700 bg-neutral-200 [mask-image:radial-gradient(ellipse_at_center,white,transparent)]  border border-neutral-300 dark:border-llet-700" />
+);
 
 export const navItems = [
   { id: 1, link: "#faq", title: "FAQ", scroll: true },
@@ -129,7 +137,17 @@ export const testimonialsData = {
       videoSrc: "/assets/empty-bg.webp",
       userImage: "/assets/empty-bg.webp",
       date: "2023-03-15",
-    }
+    },
+    {
+      id: 6,
+      review:
+        "The progress tracking feature keeps me motivated to learn more every day.",
+      name: "Chris Wilson",
+      profession: "Data Analyst",
+      videoSrc: "/assets/empty-bg.webp",
+      userImage: "/assets/empty-bg.webp",
+      date: "2023-03-15",
+    },
   ],
 };
 
@@ -137,34 +155,73 @@ export const faqData = {
   heading: "Frequently Asked Questions",
   faqs: [
     {
-      question: "What is the purpose of this website?",
+      question: "What languages can I learn on this platform?",
       answer:
-        "This website is a place to help you find the best products and services in the world.",
+        "Our platform offers a wide range of languages including Spanish, French, German, Mandarin, Japanese, and many more.",
     },
     {
-      question: "How do I contact support?",
+      question: "How do I start learning a new language?",
       answer:
-        "You can contact support by email at support@example.com or by phone at 123-456-7890.",
+        "To start learning a new language, simply sign up for an account, choose your desired language, and begin with our introductory lessons.",
     },
     {
-      question: "How do I find the best products?",
+      question: "Are there any resources for advanced learners?",
       answer:
-        "You can find the best products by searching for them on the search page or by browsing the categories.",
+        "Yes, we provide advanced resources such as podcasts, articles, and live conversation sessions to help advanced learners improve their skills.",
     },
     {
-      question: "Can I return a product?",
+      question: "Can I track my language learning progress?",
       answer:
-        "Yes, you can return a product within 30 days of purchase. Please refer to our return policy for more details.",
+        "Absolutely! Our platform includes a progress tracking feature that allows you to monitor your learning milestones and achievements.",
     },
     {
-      question: "Do you offer international shipping?",
+      question: "Do you offer live tutoring sessions?",
       answer:
-        "Yes, we offer international shipping to most countries. Shipping fees and delivery times may vary depending on the destination.",
+        "Yes, we offer live tutoring sessions with experienced language tutors. You can schedule sessions at your convenience through our platform.",
     },
     {
-      question: "How can I track my order?",
+      question: "Is there a community for language learners?",
       answer:
-        "You can track your order by logging into your account and visiting the order history page. You will also receive a tracking number via email once your order has shipped.",
+        "Yes, we have a vibrant community of language learners where you can interact, share experiences, and practice with fellow learners.",
+    },
+  ],
+};
+
+export const featuresData = {
+  heading: "Why us?",
+  subheading: "What makes our platform stand out?",
+  features: [
+    {
+      title: "Introduction to Language Learning",
+      description:
+        "Begin your journey with our comprehensive language courses.",
+      header: <Skeleton />,
+      className: "md:col-span-2",
+      icon: <FaBook className="h-4 w-4 text-neutral-500" />,
+    },
+    {
+      title: "Interactive Vocabulary Building",
+      description:
+        "Enhance your vocabulary with engaging and interactive tools.",
+      header: <Skeleton />,
+      className: "md:col-span-1",
+      icon: <FaPuzzlePiece className="h-4 w-4 text-neutral-500" />,
+    },
+    {
+      title: "Grammar Mastery",
+      description:
+        "Master the intricacies of grammar with our expert resources.",
+      header: <Skeleton />,
+      className: "md:col-span-1",
+      icon: <FaPenFancy className="h-4 w-4 text-neutral-500" />,
+    },
+    {
+      title: "Conversational Practice",
+      description:
+        "Improve your speaking skills with real-life conversation practice.",
+      header: <Skeleton />,
+      className: "md:col-span-2",
+      icon: <FaComments className="h-4 w-4 text-neutral-500" />,
     },
   ],
 };

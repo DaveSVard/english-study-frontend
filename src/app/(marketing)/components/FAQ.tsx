@@ -15,6 +15,7 @@ export function FAQ() {
   return (
     <InViewContainer
       amount={0.15}
+      id="faq"
       className="xxl-custom-container w-full px-4 py-20 md:px-8 md:py-40"
     >
       <AnimatedText as="h2" className="section-heading">
